@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap%27');
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+}
+
+.menu {
+  display: flex;
+  background-color: #26038A;
+  height: 100px;
+  font-weight: bolder;
+  font-size: 40px;
+  justify-content: center;
+  color: white;
+}
+
+.taskInputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Robot';
+  color: #26038A;
+  font-weight: 400;
+  margin-right: 200px;
+}
+
+.printTaskButton {
+  color: white;
+  background-color: #1B42A5;
+  border-style: none;
+  width: 532px;
+  height: 60px;
+  margin-top: 40px;
+  margin-left: 630px;
+  font-family: 'Roboto';
+  font-weight:500;
+  font-size: 25px;
+
+}
+
+.belowHeader{
+  margin-left: 100px;
+
+}
+
+.submitATask {
+  display:flex;
+  justify-content: flex-start;
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #26038A;
+}
+
+.hOneLine {
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  width: 1308px;
+  height: 2px;
+  background-color: #26038A;
+  top: 170px;
+
+}
+
+.hTwoLine {
+  display: flex;
+  position: absolute;
+  width: 1308px;
+  height: 2px;
+  background-color: #26038A;
+  top: 425px;
+}
+
+.taskDescriptionInput {
+  width: 394px;
+  border-top: none;
+  border-radius: 10px;
+  border-color: #26038A;
+  margin-left: 40px;
+}
+
+.selectingTask {
+  background-color: white;
+  width: 394px;
+  border-top: none;
+  border-radius: 10px;
+  border-color: #26038A;
+  
+}
+
+.taskDescriptionTitleFirst {
+  display: flex;
+  margin-left: 180px;
+
+}
+
+.taskDescriptionTitleSecond {
+  margin-left: 200px;
+
+}
+
+.taskDescriptionTitleThird {
+  margin-left: 115px;
+
+}
+
+.belowInputs {
+  margin-left: 100px;
+}
+
+.allTaskCards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.starting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  color: white;
+  width: 400px;
+  height: 76px;
+  background-color: #D21B1B;
+}
+
+.finishing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  color: white;
+  width: 400px;
+  height: 76px;
+  background-color: #DFD600;
+}
+
+.finished {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  color: white;
+  width: 400px;
+  height: 76px;
+  background-color: #0CE155;
+
+}
+
+.wholeCard{
+  
+}
+
+.toDo .wholeCard {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 240px;
+  padding: 5px;
+  background-color: #FFD0D0;
+  margin-bottom: 30px;
+  border-style: solid;
+  border-width: 1px;
+
+}
+
+.beingDone .wholeCard {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 240px;
+  padding: 5px;
+  background-color: #FFFDCE;
+  margin-bottom: 30px;
+  border-style: solid;
+  border-width: 1px;
+
+}
+
+.done .wholeCard {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 240px;
+  padding: 5px;
+  background-color: #DFFAE8;
+  margin-bottom: 30px;
+  border-style: solid;
+  border-width: 1px;
+
+}
+
+.descTitle {
+  color: #1B42A5;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.editRemoveBtns {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  margin-left: 300px;
+
+}
