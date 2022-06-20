@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TaskBox from './TaskBox'
+import TaskCard from './TaskCard'
 
 const AddTaskBox = () => {
     const [taskName, setTaskName] = useState('');
@@ -76,19 +76,46 @@ const AddTaskBox = () => {
                     <div>
                         <h1 className='starting'>A Fazer</h1>
                         <div className="toDo">
-                            {taskList.map((auxTaskForm, index) => { if (auxTaskForm.taskType === "toDo") return <TaskBox taskName={auxTaskForm.taskName} taskDeadline={auxTaskForm.taskDeadline} index={index} editTask={editTask} removeTask={removeTask} key={index} /> })}
+                            {taskList.map((auxTaskForm, index) => { 
+                                if (auxTaskForm.taskType === "toDo") 
+                                    return <TaskCard 
+                                                taskName={auxTaskForm.taskName}    
+                                                taskDeadline={auxTaskForm.taskDeadline} 
+                                                index={index} 
+                                                editTask={editTask} 
+                                                removeTask={removeTask} 
+                                                key={index} /> 
+                                })}
                         </div>
                     </div>
+
                     <div>
                         <h1 className='finishing'>Fazendo</h1>
                         <div className="beingDone">
-                            {taskList.map((auxTaskForm, index) => { if (auxTaskForm.taskType === "beingDone") return <TaskBox taskName={auxTaskForm.taskName} taskDeadline={auxTaskForm.taskDeadline} index={index} editTask={editTask} removeTask={removeTask} key={index} /> })}
+                            {taskList.map((auxTaskForm, index) => { 
+                                 if (auxTaskForm.taskType === "beingDone") 
+                                     return <TaskCard 
+                                                taskName={auxTaskForm.taskName} 
+                                                taskDeadline={auxTaskForm.taskDeadline} 
+                                                index={index} 
+                                                editTask={editTask} 
+                                                removeTask={removeTask} 
+                                                key={index} /> 
+                            })}
                         </div>
                     </div>
+
                     <div>
                         <h1 className='finished'>Finalizado</h1>
                         <div className="done">
-                            {taskList.map((auxTaskForm, index) => { if (auxTaskForm.taskType === "done") return <TaskBox taskName={auxTaskForm.taskName} taskDeadline={auxTaskForm.taskDeadline} index={index} editTask={editTask} removeTask={removeTask} key={index} /> })}
+                            {taskList.map((auxTaskForm, index) => { 
+                                if (auxTaskForm.taskType === "done")
+                                 return <TaskCard 
+                                                 taskName={auxTaskForm.taskName} 
+                                                 taskDeadline={auxTaskForm.taskDeadline} 
+                                                 index={index} editTask={editTask} 
+                                                 removeTask={removeTask} 
+                                                 key={index} /> })}
                         </div>
                     </div>
                 </div>

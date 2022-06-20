@@ -1,7 +1,7 @@
 import { BsFillTrashFill } from 'react-icons/bs';
 import { BsFillPencilFill } from 'react-icons/bs'
 
-function TaskBox(props) {
+function TaskCard(props) {
     return (
         <div>
             <div className='wholeCard'>
@@ -24,4 +24,4 @@ function TaskBox(props) {
     );
 }
 
-export default TaskBox;
+export default TaskCard;

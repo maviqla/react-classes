@@ -1,4 +1,3 @@
-import Button from './Button.jsx'
 
 function Header() {
     return (
@@ -13,7 +12,3 @@ function Header() {
     
 export default Header;  
 
-// <Button className="selected" innerText="Home"/>
-//              <Button innerText="Today"/>
-//              <Button innerText="Weekly"/>
-//              <Button innerText="Monthly"/>
